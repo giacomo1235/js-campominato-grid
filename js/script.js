@@ -22,12 +22,13 @@ function hardLevel(){
     };
 }
 
-const btnPlay = document.getElementById('play')
-const eleLevel = parseInt(document.querySelectorAll('option'));
+/* const btnPlay = document.getElementById('play');
+const eleLevel = document.querySelectorAll('option');
 
 btnPlay.addEventListener('click', play);
 
 function play() {
+    const eleLevel = document.querySelectorAll('option').value;
     if (eleLevel == 1) {
          easyLevel();
     }  else if (eleLevel == 2) {
@@ -35,9 +36,19 @@ function play() {
     } else {
         hardLevel()
     }
-  // if value = 1 restituisci la function easylevel 
-  // if value = 2 restituisci la function mediumlevel
-  // if value = 3 restituisci la function hardlevel
+} */
+
+function changeLevel() {
+    var select = document.getElementById('change');
+	var option = select.options[select.selectedIndex].value;
+    console.log(option)
+    if (option == 1) {
+        easyLevel();
+   }  else if (option == 2) {
+       mediumLevel();
+   } else {
+       hardLevel()
+   }
 }
 
 
