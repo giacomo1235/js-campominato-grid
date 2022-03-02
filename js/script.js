@@ -8,13 +8,13 @@ function easyLevel(){
 
 
 function mediumLevel(){
-    for (let i = 1; i <= 81; i++) {
+    for (let i = 1; i <= 80; i++) {
         areaNumbers.innerHTML += `<div class= "box">${i}</div>`;
     };
 }
 
 function hardLevel(){
-    for (let i = 1; i <= 49; i++) {
+    for (let i = 1; i <= 50; i++) {
         areaNumbers.innerHTML += `<div class= "box">${i}</div>`;
     };
 };
