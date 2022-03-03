@@ -2,20 +2,20 @@ let areaNumbers = document.querySelector('.area-numbers');
 
 function easyLevel(){
     for (let i = 1; i <= 100; i++) {
-        areaNumbers.innerHTML += `<div class= "box">${i}</div>`;
+        areaNumbers.innerHTML += `<div class= "box box-0">${i}</div>`;
     };
 };
 
 
 function mediumLevel(){
-    for (let i = 1; i <= 80; i++) {
-        areaNumbers.innerHTML += `<div class= "box">${i}</div>`;
+    for (let i = 1; i <= 81; i++) {
+        areaNumbers.innerHTML += `<div class= "box box-1">${i}</div>`;
     };
 }
 
 function hardLevel(){
-    for (let i = 1; i <= 50; i++) {
-        areaNumbers.innerHTML += `<div class= "box">${i}</div>`;
+    for (let i = 1; i <= 49; i++) {
+        areaNumbers.innerHTML += `<div class= "box box-2">${i}</div>`;
     };
 };
 
@@ -39,6 +39,9 @@ function changeLevel() {
        hardLevel();
    }
 };
+
+
+  
 
 
  
